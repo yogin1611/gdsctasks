@@ -9,13 +9,6 @@
 #include <vector>
 #include <algorithm>
 using namespace std;
-
-// Traverse all candles to find the highest candle, and traverse twice to find how many candles have this height!
-// This can be done in one traverse as well. How?
-// Well we can keep track of the number of candles of current highest height.
-// If we find a higher candle, we reset the counter.
-// We will implement this method since the two traversal method is trivial.
-
 int main() {
     int n;
     scanf("%d",&n);
@@ -29,7 +22,7 @@ int main() {
             highest = h;
             cnt = 1;
         }
-        else if (h == highest) // Note this has to be "else if" not "if" !!
+        else if (h == highest)
             cnt ++;
     }
     printf("%d\n", cnt);
