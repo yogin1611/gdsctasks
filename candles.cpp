@@ -1,4 +1,3 @@
-
 #include <cstdio>
 #include <cstring>
 #include <string>
@@ -27,5 +26,3 @@ int main() {
     }
     printf("%d\n", cnt);
 }
-
-
